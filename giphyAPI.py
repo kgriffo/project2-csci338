@@ -1,3 +1,3 @@
 class GiphyAPI:
-    def function(): #spaceholder
+    def function():  # spaceholder
         return True

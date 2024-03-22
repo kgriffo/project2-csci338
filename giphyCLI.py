@@ -1,3 +1,7 @@
 class GiphyCLI:
-    def function(): #spaceholder
+    # spaceholders
+    def trending():
+        return True
+
+    def search():
         return True
