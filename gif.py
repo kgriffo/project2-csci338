@@ -7,6 +7,8 @@ import requests
 # import giphyAPI
 # import giphyCLI
 
+API_KEY = os.environ["GIPHY_API_KEY"]
+
 
 @click.group()
 def gif():
@@ -31,7 +33,6 @@ def gif():
 )
 def trending(count, markdown, lucky):
     print("trending subcommand called!")
-    API_KEY = os.environ["GIPHY_API_KEY"]
     result = requests.get(
         f"https://api.giphy.com/v1/gifs/trending?api_key={API_KEY}&limit=25&offset=0&rating=g"
     )
@@ -79,7 +80,6 @@ def trending(count, markdown, lucky):
 @click.argument("searchTerm")
 def search(count, markdown, lucky, searchterm):
     print("search subcommand called!")
-    API_KEY = os.environ["GIPHY_API_KEY"]
     result = requests.get(
         f"https://api.giphy.com/v1/gifs/search?api_key={API_KEY}"
         "&q={searchterm}&limit=25&offset=0&rating=g"
