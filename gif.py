@@ -82,7 +82,7 @@ def search(count, markdown, lucky, searchterm):
     print("search subcommand called!")
     result = requests.get(
         f"https://api.giphy.com/v1/gifs/search?api_key={API_KEY}"
-        "&q={searchterm}&limit=25&offset=0&rating=g"
+        + f"&q={searchterm}&limit=25&offset=0&rating=g"
     )
     gifs = result.json()
     if lucky:
