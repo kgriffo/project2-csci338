@@ -55,7 +55,7 @@ def trending(count, markdown, lucky):
             md_url = gif_data["images"]["preview_gif"]["url"]
             title = gif_data["title"]
             if markdown:
-                print(f"![{title}]({md_url})")
+                print(f"{number}) ![{title}]({md_url})")
             else:
                 print(f"{number}) {title} ({url})")
             number += 1
@@ -101,7 +101,7 @@ def search(count, markdown, lucky, searchterm):
             md_url = gif_data["images"]["preview_gif"]["url"]
             title = gif_data["title"]
             if markdown:
-                print(f"![{title}]({md_url})")
+                print(f"{number}) ![{title}]({md_url})")
             else:
                 print(f"{number}) {title} ({url})")
             number += 1
