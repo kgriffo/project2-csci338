@@ -1,4 +1,4 @@
 #!/bin/bash
 
-poetry run python gif.py "$@" 
-#ChatGPT helped me write this
+poetry run python gif.py "$@"  # ChatGPT helped me write this
+
