@@ -38,9 +38,11 @@ class TestAPI(unittest.TestCase):
         self.assertTrue(numTrendingGifs == 25, f"gif dict is {numTrendingGifs} long")
         self.assertTrue(numSearchGifs == 25, f"gif dict is {numSearchGifs} long")
 
+
 # CLI tests
 class TestCLI(unittest.TestCase):
     pass
 
+  
 if __name__ == "__main__":
     unittest.main()
